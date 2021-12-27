@@ -9,12 +9,11 @@ digitadas = []
 print('Jogo da forca')
 print(f"A palavra escolhida tem {len(secreto)} letras ")
 while True:
-    letra = str(input(f'Digite uma letra.Voce tem {chance} chances')).lower()
+    letra = str(input(f'Digite uma letra.\nVoce tem {chance} chances')).lower()
     if 1 < len(letra):
         print(f'Digite apenas uma letra voce tem {chance} chances')
         continue
     digitadas.append(letra)
-    print(f'até o momento as letras que existem na palavra são{digitadas} e voce tem {chance} chances')
     if letra in secreto:
         print(f'Voce acertou!!!!!')
     else:
